@@ -1,0 +1,158 @@
+/*
+Theme Name: monBlog
+Theme URI: https://themes-wordpress/monBlog
+Author: Team 719
+Author URI: https://team719.fr
+Description: thème responsive pour afficher des articles de blog
+Version: 1.0
+Requires at least: 5.0
+Tested up to: 5.4
+Requires PHP: 7.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: monblog
+This theme, like WordPress, is licensed under the GPL. (General Public Licence)
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+header{
+    text-align :center;
+    margin: 40px;
+}
+nav{
+    margin-top: 40px;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline;
+    padding: 40px;
+}
+nav ul li:hover{
+    color: grey;
+}
+a{
+    text-decoration: none;
+    
+}
+h1 a, h3 {
+    color: black;
+}
+h2 a{
+    color: white;
+}
+nav{
+    text-align :center;
+    margin: 40px;;
+}
+.container{
+    width: 90%;
+}
+#blog{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.blog-item{
+    /* flex: 1; */
+    width: 30%;
+    position: relative;
+    align-self: flex-start;
+}
+.blog-item-image{
+    height: 500px;
+}
+.blog-item-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.blog-item-titre{
+    position: absolute;
+    bottom: 0px;
+    padding: 5%;
+    background-color:rgba(34, 26, 26, 0.247);
+    color: white;
+}
+footer{
+    background-color: grey;
+    color: white;
+}
+.widgets-footer-area{
+    display: flex;
+    border-bottom: 1px black dotted;
+}
+.widget-footer{
+    flex: 1;
+    padding: 20px;
+}
+footer p{
+    padding: 20px;
+    text-align: center;
+}
+/*SINGLE*/
+.blogPost{
+    display: flex;
+}
+.blog-desc{
+    flex: 1;
+    padding: 20px;
+    /* height: 400px; */
+}
+.blog-desc img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    height: 400px;
+}
+/* .blog-desc-texte{
+    margin: 30px;
+} */
+/*STYLE DU  TEMPLATE SIDEBAR DROITE*/
+.containerPageSidebar{
+    display: flex;
+}
+.mainPage{
+    flex: 2;
+}
+.asidePage{
+    flex: 1; 
+    /* border-left: 1px #4d4d4d dotted; */
+    background-color:rgb(182, 13, 255);
+    color: white;
+}
+.widget-block{
+    text-align: center;
+}
+.widget-block a{
+    color: white;
+}
+.widget-block li{
+    list-style-type: none;
+}
+.widget-title{
+    margin: 40px;
+    color:white;
+    text-align: center;
+    border: 1px black dotted;
+    padding: 10px;
+}
+@media screen and (max-width:500px){
+    .blog-item{
+        width: 100%;
+    }
+    nav ul li {
+        padding: 5px;
+    }
+    ul{
+        display: grid;
+    }
+    .widgets-footer-area{
+        flex-direction: column;
+    }
+}
+
